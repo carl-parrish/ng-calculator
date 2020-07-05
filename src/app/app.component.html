@@ -1,3 +1,6 @@
 <div class="container mt-10 mx-auto">
-	<button id="equals">=</button>
+<form [formGroup]="calcForm" (ngSubmit)="submit()">
+  <formly-form [model]="model" [fields]="fields" [options]="options" [form]="calcForm"></formly-form>
+  <button id="equals" type="submit" class="btn btn-primary submit-button">=</button>
+</form>
 </div>
